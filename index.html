@@ -1,1 +1,262 @@
-Lorenzo Mascotto is not  happy!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Andrea Bressan personal page</title>
+	<style>
+		.author {display : inline;}
+		.author:after {content : "\a"; display:block;}
+		.title  {display : inline; font-style: italic; font-weight: bold;}
+		.title:after {content : "\a"; display:block;}
+		.journal{display : inline;}
+		.url    {display : inline;}
+		.url:before {content : "\a"; display:block;}
+		.DOI    {display : none;}
+		.year   {display : inline;}
+		.year:before{content:"(";}
+		.year:after {content:")";}
+		.ISSN   {display : none;}
+		.volume {display : inline;}
+		.pages  {display : inline;}
+		.number {display : none;}
+		.booktitle {display : inline;}
+		.publisher  {display : inline;}
+		.series {display : inline;}
+</style>
+	
+</head>
+<body>
+	<par> I am a researcher at <a href="https://imati.cnr.it/make_home_page.php?status=start">Istituto di Matematica Applicata e Tecnologie Informatiche "Enrico Magenes" (IMATI)</a> of the <a href="https://www.cnr.it/en">National Research Council of Italy (CNR)</a>.
+	</par>
+	<par>
+		Here you can find some information about me and my research activities.
+		<ol class="menu">
+			<li onclick="selectDiv('projects')">projects</li>
+			<li onclick="selectDiv('publications')">publications</li>
+			<li onclick="selectDiv('about')">about me</li>
+		</ol>
+	</par>
+	<div id="projects">
+		<h2>Current projects I am member of</h2>
+		<ul>
+			<li> <a href="https://www.raiseliguria.it/">RAISE</a>: part of the post COVID pandemic <i> Piano Nazionale di Rinascita e Resilienza (PNRR)</i>collaborating with Domenico Federico Gallipoli Leonardo Gatti Simone Lalicata Lorenzo Pittaluga Tamellini on the coupling of Richards' equation with limit equilibrium models to assess the risk of rainfall-induced land slides.</li>
+			<li> COSMIC (PRIN No. 2022A79M75): a national PRIN2022 project on isogeometric analysis in methods collaboration with Cesare Carlotta Bracco Giannelli (PI)Alessandro Reale.</li>
+			<li> PRIN-PNRR (P2022LXLYY): a national project on uncertainty quantification for coupled models with emphasis on fluid flows in porous poroelasticity media and transport of collaboration contaminants with Francesca Sauro Locatelli Lorenzo Manenti Tamellini (PI)Sara Pietro Todeschini Zanotti.</li>
+		</ul>
+		<h2>Previous projects I have been involved in</h2>
+		<ul>
+			<li> CE4a WE project from the Lombardia administrative region about modeling the groundwater flow in the Ticino river valley.</li>
+			<li>FP7 project <a href="https://cordis.europa.eu/project/id/339643">FEEC-A</a> as about PostDoc applications of Finete Element Exterior Calculus under the supervision of Ragnar Winther.</li>
+			<li> <a href="https://cordis.europa.eu/project/id/324340">EXAMPLE</a> as a Marie-Curie Fellow under the supervision of Bert Jüttler.</li>
+			<li> FWF-NFN project <a href="http://www.gs.jku.at/">Geometry + simulation</a>a project about IsoGeometric Analysis whose main product is the <a href="https://github.com/gismo/gismo">G+SMO</a> software library</li>
+			<li> FP7 projects <a href="https://cordis.europa.eu/project/id/284981">TERRIFIC</a></li>
+		</ul>
+	</div>
+	<div id="publications">
+		<h2>The list of publications</h2>
+		<ul>
+			<li>
+				<div class="author">Federico Gatti and Andrea Bressan and Alessio Fumagalli, Domenico Gallipoli, Leonardo Lalicata, Simone Pittaluga, Lorenzo Tamellini</div>
+				<div class="title">Two Nitsche-based mixed finite element discretizations for the seepage problem in Richards' equation</div>
+				<div class="journal">Computer Methods in Applied Mechanics and Engineering</div>
+				<div class="volume">432</div>
+				<div class="year">2024</div>
+				<div class="pages">PaperNo.117368 20</div>
+				<div class="ISSN">0045-7825,1879-2138</div>
+				<div class="DOI">10.1016/j.cma.2024.117368</div>
+				<div class="url"><a href="https://doi.org/10.1016/j.cma.2024.117368">journal version</a></div>
+			</li>
+			<li>
+				<div class="author">Andrea Bressan, Gabriele Loli, Sauro Manenti, Alessandro Reali, Giancarlo Sangalli</div>
+				<div class="title">An isogeometric shape optimization method for groundwater flow in porous media</div>
+				<div class="journal">Computers &amp; Mathematics with Applications. An International Journal</div>
+				<div class="volume">162</div>
+				<div class="year">2024</div>
+				<div class="pages">104&mdash;119</div>
+				<div class="ISSN">0898-1221,1873-7668</div>
+				<div class="DOI">10.1016/j.camwa.2024.02.044</div>
+				<div class="url"><a href="https://doi.org/10.1016/j.camwa.2024.02.044">journal version</a></div>
+			</li>
+			<li>
+				<div class="author">Andrea Bressan, Michael Floater S., Espen Sande</div>
+				<div class="title">On best constants in L2 approximation</div>
+				<div class="journal">IMA Journal of Numerical Analysis</div>
+				<div class="volume">41</div>
+				<div class="year">2021</div>
+				<div class="number">4</div>
+				<div class="pages">2830&mdash;2840</div>
+				<div class="ISSN">0272-4979,1464-3642</div>
+				<div class="DOI">10.1093/imanum/draa041</div>
+				<div class="url"><a href="https://doi.org/10.1093/imanum/draa041">journal version</a></div>
+			</li>
+			<li>
+				<div class="author">Andrea Bressan, Tom Lyche</div>
+				<div class="title">Local approximation from spline spaces on box meshes</div>
+				<div class="journal">Foundations of Computational Mathematics</div>
+				<div class="volume">21</div>
+				<div class="year">2021</div>
+				<div class="number">3</div>
+				<div class="pages">807&mdash;848</div>
+				<div class="ISSN">1615-3375,1615-3383</div>
+				<div class="DOI">10.1007/s10208-020-09467-8</div>
+				<div class="url"><a href="https://doi.org/10.1007/s10208-020-09467-8">journal version</a></div>
+			</li>
+			<li>
+				<div class="author">Andrea Bressan, Espen Sande</div>
+				<div class="title">Approximation in FEM DG and IGA: a theoretical comparison</div>
+				<div class="journal">Numerische Mathematik</div>
+				<div class="volume">143</div>
+				<div class="year">2019</div>
+				<div class="number">4</div>
+				<div class="DOI">10.1007/s00211-019-01063-5</div>
+				<div class="ISSN">0029-599X</div>
+				<div class="pages">923&mdash;942</div>
+				<div class="url"><a href="https://doi.org/10.1007/s00211-019-01063-5">journal version</a></div>
+
+				
+			</li>
+			<li>
+				<div class="author">Andrea Bressan, Stefan Takacs</div>
+				<div class="title">Sum factorization techniques in isogeometric analysis</div>
+				<div class="journal">Computer Methods in Applied Mechanics and Engineering</div>
+				<div class="volume">352</div>
+				<div class="year">2019</div>
+				<div class="pages">437&mdash;460</div>
+				<div class="DOI">10.1016/j.cma.2019.04.031</div>
+				<div class="ISSN">0045-7825</div>
+				<div class="url"><a href="https://doi.org/10.1016/j.cma.2019.04.031">journal version</a></div>
+
+				
+			</li>
+			<li>
+				<div class="author">Andrea Bressan, Bert Jüttler</div>
+				<div class="title">Inf-sup stability of isogeometric Taylor-Hood and sub-grid methods for the Stokes problem with hierarchical splines</div>
+				<div class="journal">IMA Journal of Numerical Analysis</div>
+				<div class="volume">38</div>
+				<div class="year">2018</div>
+				<div class="number">2</div>
+				<div class="pages">955&mdash;975</div>
+				<div class="DOI">10.1093/imanum/drx031</div>
+				<div class="ISSN">0272-4979</div>
+				<div class="url"><a href="https://doi.org/10.1093/imanum/drx031">journal version</a></div>
+			</li>
+			<li>
+				<div class="author">Andrea Bressan, Dominik Mokriš</div>
+				<div class="title">A versatile strategy for the implementation of adaptive splines</div>
+				<div class="booktitle">Mathematical methods for curves and surfaces</div>
+				<div class="volume">10521</div>
+				<div class="year">2017</div>
+				<div class="series">Lecture Notes in Comput. Sci.</div>
+				<div class="pages">42&mdash;73</div>
+				<div class="publisher">Cham Springer</div>
+				<div class="DOI">10.1007/978-3-319-67885-6_3</div>
+				<div class="url"><a href="https://doi.org/10.1007/978-3-319-67885-6_3">journal version</a></div>
+				
+			</li>
+			<li>
+				<div class="author">Pablo Antolin, Andrea Bressan, Annalisa Buffa, Giancarlo Sangalli</div>
+				<div class="title">An isogeometric method for linear nearly-incompressible elasticity with local stress projection</div>
+				<div class="journal">Computer Methods in Applied Mechanics and Engineering</div>
+				<div class="volume">316</div>
+				<div class="year">2017</div>
+				<div class="pages">694&mdash;719</div>
+				<div class="DOI">10.1016/j.cma.2016.09.033</div>
+				<div class="ISSN">0045-7825</div>
+				<div class="url"><a href="https://doi.org/10.1016/j.cma.2016.09.033">journal version</a></div>
+			</li>
+			<li>
+				<div class="author">Andrea Bressan, Annalisa Buffa, Giancarlo Sangalli</div>
+				<div class="title">Characterization of analysis-suitable T-splines</div>
+				<div class="journal">Computer Aided Geometric Design</div>
+				<div class="volume">39</div>
+				<div class="year">2015</div>
+				<div class="pages">17&mdash;49</div>
+				<div class="ISSN">0167-8396</div>
+				<div class="DOI">10.1016/j.cagd.2015.06.007</div>
+				<div class="url"><a href="https://doi.org/10.1016/j.cagd.2015.06.007">journal version</a></div>
+
+			</li>
+			<li>
+				<div class="author">Andrea Bressan, Bert Jüttler</div>
+				<div class="title">A hierarchical construction of LR meshes in 2D</div>
+				<div class="journal">Computer Aided Geometric Design</div>
+				<div class="volume">37</div>
+				<div class="year">2015</div>
+				<div class="pages">9&mdash;24</div>
+				<div class="DOI">10.1016/j.cagd.2015.06.002</div>
+				<div class="ISSN">0167-8396</div>
+				<div class="url"><a href="http://dx.doi.org/10.1016/j.cagd.2015.06.002">journal version</a></div>
+			</li>
+			<li>
+				<div class="author">Andrea Bressan</div>
+				<div class="title">Some properties of LR-splines</div>
+				<div class="journal">Computer Aided Geometric Design</div>
+				<div class="volume">30</div>
+				<div class="year">2013</div>
+				<div class="number">8</div>
+				<div class="pages">778&mdash;794</div>
+				<div class="DOI">10.1016/j.cagd.2013.06.004</div>
+				<div class="ISSN">0167-8396</div>
+				<div class="url"><a href="https://doi.org/10.1016/j.cagd.2013.06.004">journal version</a></div>
+			</li>
+			<li>
+				<div class="author">Andrea Bressan, Giancarlo Sangalli</div>
+				<div class="title">Isogeometric discretizations of the Stokes problem: stability analysis by the macroelement technique</div>
+				<div class="journal">IMA Journal of Numerical Analysis</div>
+				<div class="volume">33</div>
+				<div class="year">2013</div>
+				<div class="pages">629&mdash;651</div>
+				<div class="number">2</div>
+				<div class="DOI">10.1093/imanum/drr056</div>
+				<div class="ISSN">0272-4979</div>
+				<div class="url"><a href="https://doi.org/10.1093/imanum/drr056">journal version</a></div>
+			</li>
+			<li>
+				<div class="author">Andrea Bressan</div>
+				<div class="title">Isogeometric regular discretization for the Stokes problem</div>
+				<div class="journal">IMA Journal of Numerical Analysis</div>
+				<div class="volume">31</div>
+				<div class="year">2011</div>
+				<div class="pages">1334&mdash;1356</div>
+				<div class="number">4</div>
+				<div class="DOI">10.1093/imanum/drq014</div>
+				<div class="ISSN">0272-4979</div>
+				<div class="url"><a href="https://doi.org/10.1093/imanum/drq014">journal version</a></div>
+			</li>
+		</ul>
+	</div>
+	<div id="about"> ABp</div>
+	<script>
+		PR=document.getElementById("projects");
+		PU=document.getElementById("publications");
+		AB=document.getElementById("about");
+		PR.style.display = "none";
+		PU.style.display = "none";
+		AB.style.display = "block"; 
+		
+		function selectDiv(name) {
+			
+			switch (name){
+				case "projects":
+				PR.style.display = "block";
+				PU.style.display = "none";
+				AB.style.display = "none";
+				break;
+				case "publications":
+				PR.style.display = "none";
+				PU.style.display = "block";
+				AB.style.display = "none";
+				break;
+				case "about":
+				PR.style.display = "none";
+				PU.style.display = "none";
+				AB.style.display = "block";
+				break;
+			}
+		}
+	</script> 
+</body>
+</html>
+	
+	
+	
