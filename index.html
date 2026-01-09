@@ -22,6 +22,9 @@
 		.booktitle {display : inline;}
 		.publisher  {display : inline;}
 		.series {display : inline;}
+
+		.selected   {color: red;}
+		.unselected {color: blue;}
 </style>
 	
 </head>
@@ -31,9 +34,9 @@
 	<par>
 		Here you can find some information about me and my research activities, (click on a section to see the content):
 		<ol class="menu">
-			<li onclick="selectDiv('projects')">projects</li>
-			<li onclick="selectDiv('publications')">publications</li>
-			<li onclick="selectDiv('about')">about me</li>
+			<li id="pr_link" onclick="selectDiv('projects')">projects</li>
+			<li id="pu_link" onclick="selectDiv('publications')">publications</li>
+			<li id="ab_link" onclick="selectDiv('about')">about me</li>
 		</ol>
 	</par>
 	<div id="projects">
@@ -56,11 +59,11 @@
 		<h2>Preprints</h2>
 		<ul>
 			<li>
-				<div class="author">Andrea Bressan, Lorenzo Mascotto, Marialetizia Mosconi</div>
-				<div class="title">New Crouzeix-Raviart elements of even degree: theoretical aspects, numerical performance, and applications to the Stokes' equations</div>
+				<div class="author">Andrea Bressan, Massimiliano Martinelli, Giancarlo Sangalli</div>
+				<div class="title">Overlapping subspaces and singular systems with application to isogeometric analysis</div>
 				<div class="journal">arXiv</div>
-				<div class="year">2025</div>
-				<div class="url"><a href="https://arxiv.org/abs/2502.12609">preprint</a></div>
+				<div class="year">2024</div>
+				<div class="url"><a href="https://arxiv.org/abs/2408.17273">preprint</a></div>
 			</li>
 			<li>
 				<div class="author">Andrea Bressan, Alen Kushova, Gabriele Loli,  Monica Montardini, Giancarlo Sangalli, Mattia Tani</div>
@@ -87,12 +90,32 @@
 		<h2>List of publications</h2>
 		<ul>
 			<li>
+				<div class="author">Leonardo Maria Lalicata, Andrea Bressan, Simone Pittaluga, Lorenzo Tamellini, Domenico Gallipoli</div>
+				<div class="title">An Efficient Slope Stability Algorithm with Physically Consistent Parametrisation of Slip Surfaces</div>
+				<div class="journal">International Journal of Civil Engineering</div>
+				<div class="year">2025</div>
+				<div class="volume">23</div>
+				<div class="pages">671 &mdash;682</div>
+				<div class="ISSN">2383-3874</div>
+				<div class="DOI">10.1007/s40999-024-01053-1</div>
+				<div class="url"><a href="https://doi.org/10.1007/s40999-024-01053-1">journal version</a></div>
+			</li>
+			<li>
+				<div class="author">Andrea Bressan, Lorenzo Mascotto, Marialetizia Mosconi</div>
+				<div class="title">New Crouzeix-Raviart elements of even degree: theoretical aspects, numerical performance, and applications to the Stokes' equations</div>
+				<div class="journal">IMA Journal of Numerical Analysis</div>
+				<div class="year">2025</div>
+				<div class="ISSN">0272-4979</div>
+				<div class="DOI">10.1093/imanum/draf091</div>
+				<div class="url"><a href="https://doi.org/10.1093/imanum/draf091">journal version</a></div>
+			</li>
+			<li>
 				<div class="author">Federico Gatti and Andrea Bressan and Alessio Fumagalli, Domenico Gallipoli, Leonardo Lalicata, Simone Pittaluga, Lorenzo Tamellini</div>
 				<div class="title">Two Nitsche-based mixed finite element discretizations for the seepage problem in Richards' equation</div>
 				<div class="journal">Computer Methods in Applied Mechanics and Engineering</div>
 				<div class="volume">432</div>
 				<div class="year">2024</div>
-				<div class="pages">PaperNo.117368 20</div>
+				<div class="pages">117368</div>
 				<div class="ISSN">0045-7825,1879-2138</div>
 				<div class="DOI">10.1016/j.cma.2024.117368</div>
 				<div class="url"><a href="https://doi.org/10.1016/j.cma.2024.117368">journal version</a></div>
@@ -262,27 +285,31 @@
 		PR=document.getElementById("projects");
 		PU=document.getElementById("publications");
 		AB=document.getElementById("about");
-		PR.style.display = "none";
-		PU.style.display = "none";
-		AB.style.display = "block"; 
+		PRL=document.getElementById("pr_link");
+		PUL=document.getElementById("pu_link");
+		ABL=document.getElementById("ab_link");
+		PR.style.display = "none";	PRL.className="unselected"
+		PU.style.display = "none";	PUL.className="unselected"
+		AB.style.display = "block";	ABL.className="selected"  
 		
+
 		function selectDiv(name) {
 			
 			switch (name){
 				case "projects":
-				PR.style.display = "block";
-				PU.style.display = "none";
-				AB.style.display = "none";
+				PR.style.display = "block";	PRL.className="selected"
+				PU.style.display = "none";	PUL.className="unselected"
+				AB.style.display = "none";	ABL.className="unselected"  
 				break;
 				case "publications":
-				PR.style.display = "none";
-				PU.style.display = "block";
-				AB.style.display = "none";
+				PR.style.display = "none";	PRL.className="unselected"
+				PU.style.display = "block";	PUL.className="selected"
+				AB.style.display = "none";	ABL.className="unselected"  
 				break;
 				case "about":
-				PR.style.display = "none";
-				PU.style.display = "none";
-				AB.style.display = "block";
+				PR.style.display = "none";	PRL.className="unselected"
+				PU.style.display = "none";	PUL.className="unselected"
+				AB.style.display = "block";	ABL.className="selected"  
 				break;
 			}
 		}
